@@ -1,7 +1,7 @@
 import './styles/all.scss'
-import MainComponent from './components/MainComponent'
+// import MainComponent from './components/MainComponent'
 
-const component = MainComponent('My component text')
+// const component = MainComponent('My compoent text')
 
-document.querySelector('body').appendChild(component)
+// document.querySelector('body').appendChild(component)
 

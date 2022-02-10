@@ -1,0 +1,19 @@
+@import '_style.scss';
+
+body{
+  background-color: #000;
+  height: 100vh;
+ display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  justify-content: space-between;
+    .main{
+      width: 100%;
+      background-color: aqua;
+      flex: 1 0 auto;
+    }
+
+  
+
+
+}

@@ -1,0 +1,36 @@
+$main-color: #192f2d;
+$text-color: #fff;
+$bg-color: #273136;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  scroll-behavior: smooth;
+  color: $text-color;
+  background-color: $bg-color;
+}
+
+@mixin flex($justifyContent: space-between) {
+  display: flex;
+  justify-content: $justifyContent;
+}
+
+@mixin btn() {
+  width: 32px;
+  height: 32px;
+  background-size: 32px 32px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  opacity: 0.8;
+  cursor: pointer;
+  transition: 0.3s;
+}
