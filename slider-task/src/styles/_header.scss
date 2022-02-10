@@ -1,6 +1,14 @@
 @import '_style.scss';
 
-.header{
-  height: 10vh;
-  background-color: beige;
+.header {
+  @include headAndFoot();
+  @include flex(center);
+  align-items: center;
+  h1 {
+    font-family: 'Fredoka One', cursive;
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    background-color: $main-color;
+  }
 }

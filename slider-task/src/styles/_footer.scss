@@ -2,11 +2,9 @@
 
 .footer {
   @include flex(center);
+  @include headAndFoot();
   flex-direction: column;
   align-items: center;
-  width: 100vw;
-  height: 10vh;
-  background-color: $main-color;
   gap: 10px;
   .footer-link {
     width: 185px;

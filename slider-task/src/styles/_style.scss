@@ -2,7 +2,7 @@ $main-color: #192f2d;
 $text-color: #fff;
 $bg-color: #273136;
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Inter:wght@500;700&display=swap');
 
 * {
   margin: 0;
@@ -10,7 +10,7 @@ $bg-color: #273136;
   box-sizing: border-box;
   font-family: 'Inter', sans-serif;
   font-size: 24px;
-  font-weight: 400;
+  font-weight: 500;
   scroll-behavior: smooth;
   color: $text-color;
   background-color: $bg-color;
@@ -19,6 +19,12 @@ $bg-color: #273136;
 @mixin flex($justifyContent: space-between) {
   display: flex;
   justify-content: $justifyContent;
+}
+
+@mixin headAndFoot() {
+  width: 100vw;
+  height: 10vh;
+  background-color: $main-color;
 }
 
 @mixin btn() {
