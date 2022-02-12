@@ -17,3 +17,7 @@ What I've done:
 8. supports scrolling to a selected slide (like go to slide X)
 
 
+project link:
+https://alexej-ilyutik.github.io/Slider-swiper/task-carousel/
+
+
