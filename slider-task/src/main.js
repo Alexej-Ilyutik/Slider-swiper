@@ -40,6 +40,7 @@ function init() {
 }
 
 window.addEventListener('resize', init);
+window.addEventListener('load', init);
 init();
 
 function createBullets() {

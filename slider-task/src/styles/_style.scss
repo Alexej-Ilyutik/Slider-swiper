@@ -16,14 +16,26 @@ $bg-color: #273136;
   background-color: $bg-color;
 }
 
+html,
+body {
+  background-color: #000;
+  height: 100%;
+}
+
+.wrapper{
+  min-height: 100%;
+display: flex;
+  flex-direction: column;
+  
+}
+
 @mixin flex($justifyContent: space-between) {
   display: flex;
   justify-content: $justifyContent;
 }
 
 @mixin headAndFoot() {
-  width: 100vw;
-  height: 10vh;
+  padding: 10px 0;
   background-color: $main-color;
 }
 
