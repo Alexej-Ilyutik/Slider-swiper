@@ -177,6 +177,9 @@ function swipeDetect(carousel) {
   surface.addEventListener(
     'touchstart',
     function (e) {
+      if (e.target.classList.contains('bullet')) {
+        changeBulletPosition(e);
+      }
       if (e.target.classList.contains('slider__btn')) {
         if (e.target.classList.contains('slider__prev')) {
           previousItem();

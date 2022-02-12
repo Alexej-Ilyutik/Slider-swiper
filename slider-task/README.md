@@ -1,31 +1,19 @@
-# Example 4 for webpack 5
-# Настройка гибкой конфигурации, а также генерации index.html файла
-
-## Как пользоваться
-
-```
-    npm install
-    npm run build
-```
-или
+A carousel component
+## How to use
 
 ```
    npm install
    npm run start
 ```
 
-Видео с объяснением как это все работает здесь:
-
-https://youtu.be/fnUqyWyG5kk
-
-
-Полезные видео по настройке webpack:
-
-Минимальная конфигурация - https://youtu.be/unEl3Hezwpw
-
-Настройка горячей перезагрузки - https://youtu.be/oOpzkF2nU0s
-
-Настройка сборки проекта с подгрузкой файлов css/scss/изображений - https://youtu.be/3B-NGZmMe-Y
-
+What I've done:
+1. used webpack;
+2. created a carousel component that works on mobile and desktop devices;
+3. made a useful readme;
+4. the carousel supports swipes;
+5. the carousel works for any HTML content;
+6. image change animated;
+7. the carousel supports infinite option;
+8. supports scrolling to a selected slide (like go to slide X)
 
 

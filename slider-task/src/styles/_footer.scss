@@ -25,3 +25,15 @@
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+  .footer {
+    gap: 5px;
+    .footer-link {
+      width: 140px;
+      img {
+        width: 20px;
+      }
+    }
+  }
+}
