@@ -17,10 +17,12 @@ const newItems = sliderContainer.children;
 
 let counter = 1;
 let width;
+let offset;
 
 
 function changePosition(n, x) {
   sliderContainer.style.transform = 'translate(-' + x * width * n + 'px)';
+  offset = x * width * n;
 }
 
 function init() {
@@ -83,7 +85,6 @@ function changeBulletPosition(e) {
     e.target.classList.add('_active');
   
   }
-  
 }
 
 bullets.addEventListener('click', changeBulletPosition);
@@ -96,6 +97,7 @@ function changeTransition() {
 function previousItem() {
   if (counter <= 0) return;
   changeTransition();
+  counter = offset / width;
   counter--;
   changePosition(1, counter);
   changeBullet(); 
@@ -104,8 +106,9 @@ function previousItem() {
 prevBtn.addEventListener('click', previousItem);
 
 function nextItem() {
-  if (counter >= newItems.length - 1) return;
+    if (counter >= newItems.length - 1) return;
   changeTransition();
+  counter = offset / width;
   counter++;
   changePosition(1, counter);
   changeBullet();
@@ -159,7 +162,6 @@ function swipeDetect(carousel) {
       startTime = new Date().getTime();
       e.preventDefault();
     },
-    false
   );
 
   surface.addEventListener(
@@ -172,7 +174,6 @@ function swipeDetect(carousel) {
 
       e.preventDefault();
     },
-    false
   );
 
   surface.addEventListener(
@@ -194,7 +195,6 @@ function swipeDetect(carousel) {
       startTime = new Date().getTime();
       e.preventDefault();
     },
-    false
   );
 
   surface.addEventListener(
@@ -202,7 +202,6 @@ function swipeDetect(carousel) {
     function (e) {
       e.preventDefault();
     },
-    false
   );
 
   surface.addEventListener(
@@ -215,7 +214,6 @@ function swipeDetect(carousel) {
       moveImg();
       e.preventDefault();
     },
-    false
   );
 }
 
