@@ -1,0 +1,39 @@
+@import '_style.scss';
+
+.footer {
+  @include flex(center);
+  @include headAndFoot();
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  .footer-link {
+    width: 185px;
+    @include flex(space-between);
+    align-items: inherit;
+    background-color: inherit;
+    img {
+      background-color: inherit;
+      width: 26px;
+    }
+    a {
+      background-color: inherit;
+    }
+  }
+  .footer-year {
+    p {
+      background-color: $main-color;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    gap: 5px;
+    .footer-link {
+      width: 140px;
+      img {
+        width: 20px;
+      }
+    }
+  }
+}

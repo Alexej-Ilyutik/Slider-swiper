@@ -1,0 +1,24 @@
+@import '_style.scss';
+
+.header {
+  @include headAndFoot();
+  @include flex(center);
+  align-items: center;
+  h1 {
+    font-family: 'Fredoka One', cursive;
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    background-color: $main-color;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+.header {
+  h1 {
+    font-size: 24px;
+    letter-spacing: 3px;
+  }
+}
+}
