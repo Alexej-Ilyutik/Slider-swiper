@@ -97,6 +97,12 @@
   }
 }
 
+@media screen and (max-height: 750px) {
+.carousel {
+    max-width: 55%;
+  }
+}
+
 
 @media screen and (max-height: 450px) {
 .carousel {

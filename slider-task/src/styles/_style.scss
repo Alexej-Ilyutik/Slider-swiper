@@ -37,6 +37,7 @@ display: flex;
 @mixin headAndFoot() {
   padding: 10px 0;
   background-color: $main-color;
+  width: 100vw;
 }
 
 @mixin btn() {
